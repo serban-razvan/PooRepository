@@ -14,18 +14,26 @@
 \begin{frame}{MINDMAP}
 \begin{adjustbox}{max totalsize={.9\textwidth}{.7\textheight},center}
 \begin{tikzpicture}
-\path[mindmap, concept color=teal,text=black]
+	\path[mindmap, concept color=teal,text=black]
 	node[concept] {Curs 4} [clockwise from=0]
-	child[concept color = blue!50!teal] {
+	child[concept color = blue!30!teal] {
 		node[concept] {Clase abstracte} [clockwise from=90] 
-			child[concept color = gray!80!blue]{
-			node[concept] {Metode abstracte}[clockwise from=90] {child{node[concept]{Declarate fara implementare}}}
-			node[concept] {Metode abstracte}[clockwise from=45] {child{node[concept]{Contine doar semnatura metodei}}}
+			child[concept color = white!45!blue]{
+				node[concept] {Metode abstracte}[clockwise from=90] {child{node[concept]{Declarate fara implementare}}}
+				node[concept] {Metode abstracte}[clockwise from=45] {child{node[concept]{Contine doar semnatura metodei}}}
 }
 		node[concept] {Clase abstracte} [clockwise from=45] 
-			child{node[concept] {Keyword "abstract"} }
+			child[concept color = blue!30!teal]{node[concept] {Keyword "abstract"} }
+		node[concept] {Clase abstracte} [clockwise from=-45] 
+			child[concept color = blue!30!teal]{node[concept] {Mostenire} }
 		node[concept] {Clase abstracte} [clockwise from=0] 
-			child{node[concept] {Mostenire} }
+			child[concept color = blue!30!teal]{node[concept] {Nu pot fi instantiate} }
+		node[concept] {Clase abstracte} [clockwise from=-90] 
+			child[concept color = orange!50!teal]{
+				node[concept]{De ce le folosim?}[clockwise from = -90] {child{node[concept]{Creaea de clase comune derivate}}}
+				node[concept]{De ce le folosim?}[clockwise from = -45] {child{node[concept]{Implementare partiala a unei clase}}}
+				node[concept]{De ce le folosim?}[clockwise from = -135] {child{node[concept]{Mijlocire intre clase si interfete}}}
+}
 }
 	node[concept] {Curs 4} [clockwise from=180]
 	child[concept color = green!50!teal] {
