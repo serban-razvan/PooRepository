@@ -29,11 +29,18 @@
 \begin{frame}
 \begin{adjustbox}{max totalsize={.9\textwidth}{.7\textheight},center}
 \begin{tikzpicture}
- 	\path[mindmap, concept color=teal,text=black]
+\path[mindmap, concept color=teal,text=black]
 	node[concept] {Curs 4} [clockwise from=0]
 	child[concept color = blue!50!teal] {
 		node[concept] {Clase abstracte} [clockwise from=90] 
-			child{node[concept] {Metode abstracte} }
+			child[concept color = gray!80!blue]{
+			node[concept] {Metode abstracte}[clockwise from=90] {child{node[concept]{Declarate fara implementare}}}
+			node[concept] {Metode abstracte}[clockwise from=45] {child{node[concept]{Contine doar semnatura metodei}}}
+}
+		node[concept] {Clase abstracte} [clockwise from=45] 
+			child{node[concept] {Keyword "abstract"} }
+		node[concept] {Clase abstracte} [clockwise from=0] 
+			child{node[concept] {Mostenire} }
 }
 	child[concept color = green!50!teal] {
 		node[concept] {Interfete} [clockwise from=0] 
