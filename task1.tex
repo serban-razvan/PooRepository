@@ -17,14 +17,14 @@
  	\path[mindmap, concept color=teal,text=black]
 	node[concept] {Curs 4} [clockwise from=0]
 	child[concept color = blue!30!teal] {
-		node[concept] {Clase abstracte} [clockwise from=90] 
-			child[concept color = white!45!blue]{
-				node[concept] {Metode abstracte}[clockwise from=90] {child{node[concept]{Declarate fara implementare}}}
-				node[concept] {Metode abstracte}[clockwise from=45] {child{node[concept]{Contine doar semnatura metodei}}}
-}
-		node[concept] {Clase abstracte} [clockwise from=45] 
-			child[concept color = blue!30!teal]{node[concept] {Keyword "abstract"} }
 		node[concept] {Clase abstracte} [clockwise from=-45] 
+			child[concept color = white!45!blue]{
+				node[concept] {Metode abstracte}[clockwise from=0] {child{node[concept]{Declarate fara implementare}}}
+				node[concept] {Metode abstracte}[clockwise from=-45] {child{node[concept]{Contine doar semnatura metodei}}}
+}
+		node[concept] {Clase abstracte} [clockwise from=90] 
+			child[concept color = blue!30!teal]{node[concept] {Keyword "abstract"} }
+		node[concept] {Clase abstracte} [clockwise from=45] 
 			child[concept color = blue!30!teal]{node[concept] {Keyword "extends"} }
 		node[concept] {Clase abstracte} [clockwise from=0] 
 			child[concept color = blue!30!teal]{node[concept] {Nu pot fi instantiate} }
