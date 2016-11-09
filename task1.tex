@@ -51,7 +51,11 @@
 				node[concept] {Utilizare} [clockwise from = 135] {child{node[concept]{Extindere in alt domeniu}}}
 }
 		node[concept] {Interfete} [clockwise from=270] 
-			child[concept color = red!60!green]{node[concept] {Interfete celebre} }	
+			child[concept color = red!60!green]{
+					node[concept] {Interfete celebre} [clockwise from = 225] {child{node[concept]{List}}}
+					node[concept] {Interfete celebre} [clockwise from = -90] {child{node[concept]{Comparable}}}
+					node[concept] {Interfete celebre} [clockwise from = -45] {child{node[concept]{Colections}}}
+}	
 		node[concept] {Interfete} [clockwise from=180] 
 			child[concept color = orange!50!green]{node[concept] {Mostenire multipla} 
 		node[concept] {Mostenire multipla} [clockwise from=270] 
