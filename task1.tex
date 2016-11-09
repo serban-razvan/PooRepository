@@ -57,10 +57,11 @@
 					node[concept] {Interfete celebre} [clockwise from = -45] {child{node[concept]{Colections}}}
 }	
 		node[concept] {Interfete} [clockwise from=180] 
-			child[concept color = orange!50!green]{node[concept] {Mostenire multipla} 
-		node[concept] {Mostenire multipla} [clockwise from=270] 
-			child[concept color = orange!50!green]{node[concept] {Problema diamant} }			
-}				
+			child[concept color = orange!50!green]{
+				node[concept] {Mostenire multipla} [clockwise from=180] {child{node[concept]{Derivarea de la clase "parinte"}}}
+				node[concept] {Mostenire multipla} [clockwise from=135] {child{node[concept]{O  poate clasa extinde doar o singura alta clasa}}}
+				node[concept] {Mostenire multipla} [clockwise from=225] {child{node[concept]{Problema diamant}}}
+}
 }
 ;
 \end{tikzpicture}
