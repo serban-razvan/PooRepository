@@ -38,7 +38,11 @@
 	node[concept] {Curs 4} [clockwise from=180]
 	child[concept color = green!50!teal] {
 		node[concept] {Interfete} [clockwise from=45] 
-			child{node[concept] {Ce poate contine o interfata?} }	
+			child[concept color = green!50!teal]{
+				node[concept]{Ce poate contine?}[clockwise from = 30]{child{node[concept]{Semnaturi de metode}}}
+				node[concept]{Ce poate contine?}[clockwise from = 60]{child{node[concept]{Metode statice }}}
+				node[concept]{Ce poate contine?}[clockwise from = 90]{child{node[concept]{Constante}}}
+}		
 		node[concept] {Interfete} [clockwise from=135] 
 			child{node[concept] {Grupare de semnaturi de metode} }	
 		node[concept] {Interfete} [clockwise from=90] 
