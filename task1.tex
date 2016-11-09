@@ -2,7 +2,6 @@
 %\title{text}
 %\author{text}
 %\date{date}
-\usetheme{Boadilla}
 
 \usepackage{tikz}
 \usetikzlibrary{mindmap,trees}
@@ -18,14 +17,14 @@
 	node[concept] {Curs 4} [clockwise from=0]
 	child[concept color = blue!30!teal] {
 		node[concept] {Clase abstracte} [clockwise from=-45] 
-			child[concept color = white!45!blue]{
+			child[concept color = white!30!blue]{
 				node[concept] {Metode abstracte}[clockwise from=0] {child{node[concept]{Declarate fara implementare}}}
 				node[concept] {Metode abstracte}[clockwise from=-45] {child{node[concept]{Contine doar semnatura metodei}}}
 }
 		node[concept] {Clase abstracte} [clockwise from=90] 
 			child[concept color = blue!30!teal]{node[concept] {Keyword "abstract"} }
 		node[concept] {Clase abstracte} [clockwise from=45] 
-			child[concept color = blue!30!teal]{node[concept] {Keyword "extends"} }
+			child[concept color = blue!30!teal]{node[concept] {Mostenire} }
 		node[concept] {Clase abstracte} [clockwise from=0] 
 			child[concept color = blue!30!teal]{node[concept] {Nu pot fi instantiate} }
 		node[concept] {Clase abstracte} [clockwise from=-90] 
@@ -42,7 +41,7 @@
 				node[concept]{Ce poate contine?}[clockwise from = 30]{child{node[concept]{Semnaturi de metode}}}
 				node[concept]{Ce poate contine?}[clockwise from = 60]{child{node[concept]{Metode statice }}}
 				node[concept]{Ce poate contine?}[clockwise from = 90]{child{node[concept]{Constante}}}
-}		
+}	
 		node[concept] {Interfete} [clockwise from=135] 
 			child{node[concept] {Grupare de semnaturi de metode} }	
 		node[concept] {Interfete} [clockwise from=90] 
@@ -50,13 +49,13 @@
 				node[concept] {Utilizare} [clockwise from = 90] {child{node[concept]{Lucru in echipe}}}
 				node[concept] {Utilizare} [clockwise from = 135] {child{node[concept]{Extindere in alt domeniu}}}
 }
-		node[concept] {Interfete} [clockwise from=270] 
+		node[concept] {Interfete} [clockwise from=-45] 
 			child[concept color = red!60!green]{
 					node[concept] {Interfete celebre} [clockwise from = 225] {child{node[concept]{List}}}
 					node[concept] {Interfete celebre} [clockwise from = -90] {child{node[concept]{Comparable}}}
 					node[concept] {Interfete celebre} [clockwise from = -45] {child{node[concept]{Colections}}}
 }	
-		node[concept] {Interfete} [clockwise from=180] 
+		node[concept] {Interfete} [clockwise from=225] 
 			child[concept color = orange!50!green]{
 				node[concept] {Mostenire multipla} [clockwise from=180] {child{node[concept]{Derivarea de la clase "parinte"}}}
 				node[concept] {Mostenire multipla} [clockwise from=135] {child{node[concept]{O  poate clasa extinde doar o singura alta clasa}}}
@@ -68,4 +67,3 @@
 \end{adjustbox}
 \end{frame}
 \end{document}
-
