@@ -8,6 +8,7 @@
 \usetikzlibrary{mindmap,trees}
 \usepackage{verbatim}
 \usepackage{adjustbox}
+\usepackage[utf8]{inputenc} % diacritice
 
 \begin{document}
 
@@ -19,8 +20,8 @@
 	child[concept color = blue!30!teal] {
 		node[concept] {Clase abstracte} [clockwise from=-45]
 			child[concept color = white!45!blue]{
-				node[concept] {Metode abstracte}[clockwise from=0] {child{node[concept]{Declarate f\u ar\u a implementare}}}
-				node[concept] {Metode abstracte}[clockwise from=-45] {child{node[concept]{Con\c tine doar semn\u atura metodei}}}
+				node[concept] {Metode abstracte}[clockwise from=0] {child{node[concept]{Declarate fără implementare}}}
+				node[concept] {Metode abstracte}[clockwise from=-45] {child{node[concept]{Conține doar semnătura metodei}}}
 }
 		node[concept] {Clase abstracte} [clockwise from=90]
 			child[concept color = blue!30!teal]{node[concept] {Keyword "abstract"} }
@@ -31,15 +32,15 @@
 		node[concept] {Clase abstracte} [clockwise from=-90]
 			child[concept color = orange!50!teal]{
 				node[concept]{Utilizare}[clockwise from = -90] {child{node[concept]{Creearea de clase comune derivate}}}
-				node[concept]{Utilizare}[clockwise from = -45] {child{node[concept]{Implementare partial\u a a unei clase}}}
-				node[concept]{Utilizare}[clockwise from = -135] {child{node[concept]{Mijlocire \^ intre clase \c si interfe\c te}}}
+				node[concept]{Utilizare}[clockwise from = -45] {child{node[concept]{Implementare partială a unei clase}}}
+				node[concept]{Utilizare}[clockwise from = -135] {child{node[concept]{Mijlocire între clase și interfețe}}}
 }
 }
 	node[concept] {Curs 4} [clockwise from=180]
 	child[concept color = green!50!teal] {
 		node[concept] {Interfe\c te} [clockwise from=45]
 			child[concept color = green!50!teal]{
-				node[concept]{Ce poate con\c tine?}[clockwise from = 30]{child{node[concept]{Semn\u aturi de metode}}}
+				node[concept]{Ce poate con\c tine?}[clockwise from = 30]{child{node[concept]{Semnături de metode}}}
 				node[concept]{Ce poate con\c tine?}[clockwise from = 60]{child{node[concept]{Metode statice}}}
 				node[concept]{Ce poate con\c tine?}[clockwise from = 90]{child{node[concept]{Constante}}}
 }
@@ -47,8 +48,8 @@
 			child{node[concept] {Grupare de semn\u aturi de metode} }
 		node[concept] {Interfe\c te} [clockwise from=90]
 			child[concept color = green!50!teal]{
-				node[concept] {Utilizare} [clockwise from = 90] {child{node[concept]{Lucru in echipe}}}
-				node[concept] {Utilizare} [clockwise from = 135] {child{node[concept]{Extindere \^ in alt domeniu}}}
+				node[concept] {Utilizare} [clockwise from = 90] {child{node[concept]{Lucru în echipe}}}
+				node[concept] {Utilizare} [clockwise from = 135] {child{node[concept]{Extindere în alt domeniu}}}
 }
 		node[concept] {Interfe\c te} [clockwise from=-45]
 			child[concept color = red!60!green]{
@@ -58,8 +59,8 @@
 }
 		node[concept] {Interfe\c te} [clockwise from=225]
 			child[concept color = orange!50!green]{
-				node[concept] {Mo\c stenire multipl\u a} [clockwise from=180] {child{node[concept]{Derivarea de la clase "parinte"}}}
-				node[concept] {Mo\c stenire multipl\u a} [clockwise from=135] {child{node[concept]{O clas\u a poate extinde doar o singur\u a alt\u a clas\u a}}}
+				node[concept] {Mo\c stenire multipl\u a} [clockwise from=180] {child{node[concept]{Derivarea de la clase "părinte"}}}
+				node[concept] {Mo\c stenire multipl\u a} [clockwise from=135] {child{node[concept]{O clasă poate extinde doar o singură altă clasă}}}
 				node[concept] {Mo\c stenire multipl\u a} [clockwise from=225] {child{node[concept]{Problema diamant}}}
 }
 }
