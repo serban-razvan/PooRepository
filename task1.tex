@@ -24,11 +24,14 @@
 				node[concept] {Metode abstracte}[clockwise from=-45] {child{node[concept]{Conține doar semnătura metodei}}}
 }
 		node[concept] {Clase abstracte} [clockwise from=90]
-			child[concept color = blue!30!teal]{node[concept] {Keyword "abstract"} }
-		node[concept] {Clase abstracte} [clockwise from=45]
-			child[concept color = blue!30!teal]{node[concept] {Keyword "extends"} }
+			child[concept color = blue!30!teal] {
+			node[concept] {Keywords}[clockwise from=135] {child{node[concept]{abstract}}}
+			node[concept] {Keywords}[clockwise from=90] {child{node[concept]{extends}}}
+}
 		node[concept] {Clase abstracte} [clockwise from=0]
-			child[concept color = blue!30!teal]{node[concept] {Nu pot fi instanțiate} }
+			child[concept color = blue!30!teal]{
+			node[concept] {Generalități}[clockwise from = 0] {child{node[concept]{Nu pot fi instanțiate}}}
+}
 		node[concept] {Clase abstracte} [clockwise from=-90]
 			child[concept color = orange!50!teal]{
 				node[concept]{Utilizare}[clockwise from = -90] {child{node[concept]{Creearea de clase comune derivate}}}
