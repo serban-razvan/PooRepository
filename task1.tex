@@ -23,13 +23,13 @@
 			node[concept] {Keywords}[clockwise from=70] {child{node[concept]{abstract}}}
 			node[concept] {Keywords}[clockwise from=40] {child{node[concept]{extends}}}
 			node[concept] {Keywords}[clockwise from=10] {child{node[concept, text = red]{\textbf{TODO:}}}}
-}		%asd
+}		%fefefsefs
 		node[concept] {Clase abstracte}[clockwise from=90]
 			child[concept color = blue!30!teal] {
-			node[concept] {Ce poate contine}[clockwise from=140] {child{node[concept]{Metode abstracte}}}
-			node[concept] {Ce poate contine}[clockwise from=110] {child{node[concept]{Constante}}}
-			node[concept] {Ce poate contine}[clockwise from=80] {child{node[concept]{Specificatori de acces}}}
-			node[concept] {Ce poate contine}[clockwise from=50] {child{node[concept]{Constructori}}}
+			node[concept] {Ce pot conține}[clockwise from=140] {child{node[concept]{Metode abstracte}}}
+			node[concept] {Ce pot conține}[clockwise from=110] {child{node[concept]{Membri}}}
+			node[concept] {Ce pot conține}[clockwise from=80] {child{node[concept]{Specificatori de acces}}}
+			node[concept] {Ce pot conține}[clockwise from=50] {child{node[concept]{Constructori}}}
 }	
 		node[concept] {Clase abstracte}[clockwise from=0]
 			child[concept color = blue!30!teal]{
@@ -54,13 +54,11 @@
 	child[concept color = green!50!teal] {
 		node[concept] {Interfețe} [clockwise from=90]
 			child[concept color = green!50!teal]{
-				node[concept]{Ce poate conține?}[clockwise from = 30]{child{node[concept]{Semnături de metode}}}
-				node[concept]{Ce poate conține?}[clockwise from = 60]{child{node[concept]{Metode statice}}}
-				node[concept]{Ce poate conține?}[clockwise from = 90]{child{node[concept]{Constante}}}
-				node[concept]{Ce poate conține?}[clockwise from = 120]{child{node[concept, text = red]{\textbf{TODO:}}}}
+				node[concept]{Ce pot conține}[clockwise from = 30]{child{node[concept]{Semnături de metode}}}
+				node[concept]{Ce pot conține}[clockwise from = 60]{child{node[concept]{Metode statice}}}
+				node[concept]{Ce pot conține}[clockwise from = 90]{child{node[concept]{Constante}}}
+				node[concept]{Ce pot conține}[clockwise from = 120]{child{node[concept, text = red]{\textbf{TODO:}}}}
 }
-		node[concept] {Interfețe} [clockwise from=90]
-			child{node[concept] {Grupare de semnături de metode} }
 		node[concept] {Interfețe} [clockwise from=135]
 			child[concept color = green!50!teal]{
 				node[concept] {Utilizare} [clockwise from = 100] {child{node[concept]{Lucru în echipe}}}
