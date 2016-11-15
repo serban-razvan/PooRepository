@@ -3,7 +3,11 @@
 %\author{text}
 %\date{date}
 \usetheme{Boadilla}
-
+\definecolor{blue(munsell)}{rgb}{0.0, 0.5, 0.69}
+\definecolor{blue(ryb)}{rgb}{0.01, 0.28, 1.0}
+\definecolor{blizzardblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{green(pigment)}{rgb}{0.0, 0.65, 0.31}
+\definecolor{green(html/cssgreen)}{rgb}{0.0, 0.5, 0.0}
 \usepackage{tikz}
 \usetikzlibrary{mindmap,trees}
 \usepackage{verbatim}
@@ -19,72 +23,189 @@
 	node[concept] {Curs 4} [clockwise from=0]
 	child[concept color = blue!30!teal] {
 		node[concept] {Clase abstracte}[clockwise from=45]
-			child[concept color = blue!30!teal] {
-			node[concept] {Keywords}[clockwise from=70] {child{node[concept]{abstract}}}
-			node[concept] {Keywords}[clockwise from=40] {child{node[concept]{extends}}}
-			node[concept] {Keywords}[clockwise from=10] {child{node[concept, text = red]{\textbf{TODO:}}}}
-}		
+		child[concept color = blue(munsell)] {
+			node[concept] {Keywords}[clockwise from=70] {
+				child[concept color = blizzardblue]{
+					node[concept]{abstract}
+				}
+			}
+			node[concept] {Keywords}[clockwise from=40] {
+				child[concept color = blizzardblue]{
+					node[concept]{extends}
+				}
+			}
+		}		
 		node[concept] {Clase abstracte}[clockwise from=90]
-			child[concept color = blue!30!teal] {
-			node[concept] {Ce pot conține}[clockwise from=140] {child{node[concept]{Metode abstracte}}}
-			node[concept] {Ce pot conține}[clockwise from=110] {child{node[concept]{Membri}}}
-			node[concept] {Ce pot conține}[clockwise from=80] {child{node[concept]{Specificatori de acces}}}
-			node[concept] {Ce pot conține}[clockwise from=50] {child{node[concept]{Constructori}}}
-}	
+		child[concept color = blue(munsell)] {
+			node[concept] {Ce pot conține}[clockwise from=140] {
+				child[concept color = blizzardblue]{
+					node[concept]{Metode abstracte}
+				}
+			}
+			node[concept] {Ce pot conține}[clockwise from=110] {
+				child[concept color = blizzardblue]{
+					node[concept]{Membri}
+				}
+			}
+			node[concept] {Ce pot conține}[clockwise from=80] {
+				child[concept color = blizzardblue]{
+					node[concept]{Specificatori de acces}
+				}
+			}
+			node[concept] {Ce pot conține}[clockwise from=50] {
+				child[concept color = blizzardblue]{
+					node[concept]{Constructori}
+				}
+			}
+		}	
 		node[concept] {Clase abstracte}[clockwise from=0]
-			child[concept color = blue!30!teal]{
-			node[concept] {Generalități}[clockwise from = 32] {child{node[concept]{Pot implementa metode}}}
-			node[concept] {Generalități}[clockwise from = 0] {child{node[concept]{Nu pot fi instanțiate}}}
-			node[concept] {Generalități}[clockwise from = -31] {child{node[concept, text = red]{\textbf{TODO:}}}}
-}
+		child[concept color = blue(munsell)]{
+			node[concept] {Generalități}[clockwise from = 32] {
+				child[concept color = blizzardblue]{
+					node[concept]{Pot implementa metode}
+				}
+			}
+			node[concept] {Generalități}[clockwise from = 0] {
+				child[concept color = blizzardblue]{
+					node[concept]{Nu pot fi instanțiate}
+				}
+			}
+			node[concept] {Generalități}[clockwise from = -31] {
+				child[concept color = blizzardblue]{
+					node[concept, text = red]{\textbf{TODO:}}	
+				}
+			}
+		}
 		node[concept] {Clase abstracte}[clockwise from=-45]
-			child[concept color = white!35!blue] {
-			node[concept]{TODO:}[clockwise from = -10] {child{node[concept, text = red]{\textbf{TODO:}}}}
-			node[concept]{TODO:}[clockwise from = -40] {child{node[concept, text = red]{\textbf{TODO:}}}}
-			node[concept]{TODO:}[clockwise from = -70] {child{node[concept, text = red]{\textbf{TODO:}}}}
-}
+		child[concept color = blue(munsell)] {
+			node[concept]{Clase abstracte celebre}[clockwise from = -10] {	
+				child[concept color = blizzardblue]{
+					node[concept, text = red]{\textbf{TODO:}}	
+				}
+			}
+			node[concept]{Clase abstracte celebre}[clockwise from = -40] {
+				child[concept color = blizzardblue]{
+					node[concept, text = red]{\textbf{TODO:}}
+				}
+			}
+			node[concept]{Clase abstracte celebre}[clockwise from = -70] {
+				child[concept color = blizzardblue]{
+					node[concept, text = red]{\textbf{TODO:}}
+				}
+			}
+		}
 		node[concept] {Clase abstracte} [clockwise from=-90]
-			child[concept color = orange!50!teal]{
-				node[concept]{Utilizare}[clockwise from = -50] {child{node[concept]{Implementare parțială a unei clase}}}
-				node[concept]{Utilizare}[clockwise from = -90] {child{node[concept]{Creearea de clase comune derivate}}}		
-				node[concept]{Utilizare}[clockwise from = -130] {child{node[concept]{Mijlocire între clase și interfețe}}}
-}
-}
+		child[concept color = blue(munsell)]{
+			node[concept]{Utilizare}[clockwise from = -50] {
+				child[concept color = blizzardblue]{
+					node[concept]{Implementare parțială a unei clase}
+				}
+			}
+			node[concept]{Utilizare}[clockwise from = -90] {
+				child[concept color = blizzardblue]{
+					node[concept]{Creearea de clase comune derivate}
+				}
+			}		
+			node[concept]{Utilizare}[clockwise from = -130] {
+				child[concept color = blizzardblue]{
+					node[concept]{Mijlocire între clase și interfețe}	
+				}
+			}
+		}
+	}
 	node[concept] {Curs 4} [clockwise from=180]
-	child[concept color = green!50!teal] {
+	child[concept color = green(html/cssgreen)] {
 		node[concept] {Interfețe} [clockwise from=90]
-			child[concept color = green!50!teal]{
-				node[concept]{Ce pot conține}[clockwise from = 30]{child{node[concept]{Semnături de metode}}}
-				node[concept]{Ce pot conține}[clockwise from = 60]{child{node[concept]{Metode statice}}}
-				node[concept]{Ce pot conține}[clockwise from = 90]{child{node[concept]{Constante}}}
-				node[concept]{Ce pot conține}[clockwise from = 120]{child{node[concept, text = red]{\textbf{TODO:}}}}
-}
+		child[concept color = green(pigment)]{
+			node[concept]{Ce pot conține}[clockwise from = 30] {
+				child[concept color = green!50!teal!70!white] {
+					node[concept]{Semnături de metode}
+				}
+			}
+			node[concept]{Ce pot conține}[clockwise from = 60]{
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{Metode statice}
+				}
+			}
+			node[concept]{Ce pot conține}[clockwise from = 90]{
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{Constante}
+				}
+			}
+			node[concept]{Ce pot conține}[clockwise from = 120]{
+				child[concept color = green!50!teal!70!white]{
+					node[concept, text = red]{\textbf{TODO:}}
+				}
+			}
+		}
 		node[concept] {Interfețe} [clockwise from=135]
-			child[concept color = green!50!teal]{
-				node[concept] {Utilizare} [clockwise from = 100] {child{node[concept]{Lucru în echipe}}}
-				node[concept] {Utilizare} [clockwise from = 135] {child{node[concept]{Extindere în alt domeniu}}}
-				node[concept] {Utilizare} [clockwise from = 170] {child{node[concept, text = red]{\textbf{TODO:}}}}
-}	
-		node[concept] {Interfețe} [clockwise from=180]
-			child[concept color = green!50!teal]{
-				node[concept] {TODO:} [clockwise from = 150] {child{node[concept, text = red]{\textbf{TODO:}}}}
-				node[concept] {TODO:} [clockwise from = 180] {child{node[concept, text = red]{\textbf{TODO:}}}}
-				node[concept] {TODO:} [clockwise from = 210] {child{node[concept, text = red]{\textbf{TODO:}}}}
-}
+		child[concept color = green(pigment)]{
+			node[concept] {Utilizare} [clockwise from = 100] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{Lucru în echipe}
+				}
+			}
+			node[concept] {Utilizare} [clockwise from = 135] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{Extindere în alt domeniu}
+				}
+			}
+			node[concept] {Utilizare} [clockwise from = 170] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept, text = red]{\textbf{TODO:}}
+				}
+			}
+		}	
+		node[concept] {Interfețe} [clockwise from=180] 
+		child[concept color = green(pigment)]{
+			node[concept] {Keywords} [clockwise from = 150] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{implements}
+				}
+			}
+			node[concept] {Keywords} [clockwise from = 180] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{extends}
+				}
+			}				
+		}
 		node[concept] {Interfețe} [clockwise from=225]
-			child[concept color = red!60!green]{
-					node[concept] {Interfețe celebre} [clockwise from = 195] {child{node[concept]{List}}}
-					node[concept] {Interfețe celebre} [clockwise from = 225] {child{node[concept]{Comparable}}}
-					node[concept] {Interfețe celebre} [clockwise from = 255] {child{node[concept]{Colections}}}
-}
+			child[concept color = green(pigment)]{
+				node[concept] {Interfețe celebre} [clockwise from = 195] {
+					child[concept color = green!50!teal!70!white]{
+						node[concept]{List}
+					}
+				}
+				node[concept] {Interfețe celebre} [clockwise from = 225] {
+					child[concept color = green!50!teal!70!white]{
+						node[concept]{Comparable}	
+					}
+				}
+				node[concept] {Interfețe celebre} [clockwise from = 255] {
+					child[concept color = green!50!teal!70!white]{
+						node[concept]{Colections}
+					}
+				}
+		}
 		node[concept] {Interfe\c te} [clockwise from=270]
-			child[concept color = orange!50!green]{
-				node[concept] {Moștenire multiplă} [clockwise from=235] {child{node[concept]{Derivarea de la clase "părinte"}}}
-				node[concept] {Moștenire multiplă} [clockwise from=275] {child{node[concept]{O clasă poate extinde doar o singură altă clasă}}}
-				node[concept] {Moștenire multiplă} [clockwise from=315] {child{node[concept]{Problema diamant}}}
-}
-}
-;
+		child[concept color = green(pigment)]{
+			node[concept] {Moștenire multiplă} [clockwise from=235] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{Derivarea de la clase "părinte"}
+				}
+			}
+			node[concept] {Moștenire multiplă} [clockwise from=275] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{O clasă poate extinde doar o singură altă clasă}
+				}
+			}
+			node[concept] {Moștenire multiplă} [clockwise from=315] {
+				child[concept color = green!50!teal!70!white]{
+					node[concept]{Problema diamant}
+				}
+			}
+		}
+	};
 \end{tikzpicture}
 }
 \end{frame}
